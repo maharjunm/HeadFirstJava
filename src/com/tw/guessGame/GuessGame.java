@@ -16,6 +16,7 @@ public class GuessGame {
 
         while(true) {
             int target = (int)Math.random()*10;
+            System.out.println("I am guessing a number between 0 to 9");
             player1.guess();
             player1.guess();
             player2.guess();
