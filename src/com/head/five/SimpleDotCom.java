@@ -5,6 +5,7 @@ public class SimpleDotCom {
     int numOfHits;
     SimpleDotCom(int[] locations) {
         this.locations = locations;
+        numOfHits = 0;
     }
 
     public String checkYourSelf(String value) {
