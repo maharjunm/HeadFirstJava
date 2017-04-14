@@ -5,7 +5,9 @@ import java.util.Scanner;
 public class SimpleDotComDriveTest {
     public static void main(String[] args) {
         GameHelper gameHelper = new GameHelper();
-        SimpleDotCom simpleDotCom = new SimpleDotCom(new int[]{1, 2, 3});
+        int randomValue = (int)(Math.random()*5);
+        int[] locations = new int[]{ randomValue, randomValue + 1, randomValue + 2 };
+        SimpleDotCom simpleDotCom = new SimpleDotCom(locations);
         while(true) {
             String input = gameHelper.getInput();
             String output = simpleDotCom.checkYourSelf(input);
