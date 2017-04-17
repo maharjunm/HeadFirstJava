@@ -1,4 +1,4 @@
-package com.tw.guessGame;
+package com.head.six;
 
 public class Player {
     private int number;
@@ -6,5 +6,9 @@ public class Player {
     public void guess() {
         number = (int) (Math.random() * 10);
         System.out.println("I'm guessing " + number);
+    }
+
+    public int getNumber() {
+        return number;
     }
 }
