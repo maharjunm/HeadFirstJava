@@ -22,11 +22,11 @@ public class GuessGame {
             player2.guess();
             player3.guess();
 
-            if(target == player1.number ){
+            if(target == player1.getNumber() ){
                 System.out.println("Player 1 won the Game");
-            } else if(target == player2.number) {
+            } else if(target == player2.getNumber()) {
                 System.out.println("Player 2 won the Game");
-            } else if(target == player3.number){
+            } else if(target == player3.getNumber()){
                 player3IsRight = true;
             }
 

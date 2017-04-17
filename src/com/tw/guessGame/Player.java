@@ -7,4 +7,8 @@ public class Player {
         number = (int) (Math.random() * 10);
         System.out.println("I'm guessing " + number);
     }
+
+    public int getNumber() {
+        return number;
+    }
 }
