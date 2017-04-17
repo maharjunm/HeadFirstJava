@@ -1,11 +1,17 @@
 package com.head.six;
 
+import java.util.ArrayList;
+
 public class SimpleDotComDriveTest {
     public static void main(String[] args) {
         GameHelper gameHelper = new GameHelper();
         int randomValue = (int)(Math.random()*5);
-        int[] locations = new int[]{ randomValue, randomValue + 1, randomValue + 2 };
-        SimpleDotCom simpleDotCom = new SimpleDotCom(locations);
+        ArrayList<Integer> list = new ArrayList<>();
+        int[] locations = new int[]{ 4,5,6};
+        for (int location: locations) {
+            list.add(location);
+        }
+        SimpleDotCom simpleDotCom = new SimpleDotCom(list);
         while(true) {
             String input = gameHelper.getInput();
             String output = simpleDotCom.checkYourSelf(input);
