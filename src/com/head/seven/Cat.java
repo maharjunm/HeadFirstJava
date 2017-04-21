@@ -1,6 +1,6 @@
 package com.head.seven;
 
-public class Cat extends Animal {
+public class Cat extends Feline {
     public void makeNoise() {
         //Cat's Class method
     }
