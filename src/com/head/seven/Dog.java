@@ -1,6 +1,6 @@
 package com.head.seven;
 
-public class Dog extends Canine {
+public class Dog implements Canine {
 
     public void makeNoise() {
         //dog's class
@@ -9,5 +9,20 @@ public class Dog extends Canine {
 
     public void eat() {
         //dog's class
+    }
+
+    @Override
+    public void sleep() {
+
+    }
+
+    @Override
+    public void roam() {
+
+    }
+
+    @Override
+    public void chase() {
+
     }
 }
